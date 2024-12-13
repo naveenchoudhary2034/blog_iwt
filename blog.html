@@ -1,0 +1,497 @@
+<html>
+ <head>
+  <title>
+   Blog Page
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Nunito', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #eaeaea;
+            
+        }
+        .header img {
+            height: 30px;
+            margin-right: 0px;
+            
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background-color: #f0f0f5;
+            border-radius: 50px;
+            padding: 10px 20px;
+            width: 300px;
+            margin-left: 0px;
+        }
+        .search-bar input {
+            border: none;
+            background: none;
+            outline: none;
+            width: 100%;
+            font-size: 16px;
+        }
+        .search-bar i {
+            color: #ff4081;
+            font-size: 20px;
+        }
+        .nav-links {
+            margin-left: 0px;
+            display: flex;
+            align-items: center;
+        }
+        .nav-links a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 700;
+        }
+        .nav-links .login {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+        .main-content {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .main-content h1 {
+            font-size: 36px;
+            color: #333;
+        }
+        .main-content p {
+            font-size: 18px;
+            color: #666;
+        }
+        .main-content a {
+            color: #ff4081;
+            text-decoration: none;
+        }
+        .blog-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .blog-item {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+        }
+        .blog-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .blog-item .info {
+            padding: 15px;
+        }
+        .blog-item .info h3 {
+            font-size: 18px;
+            color: #333;
+            margin: 0;
+        }
+        .blog-item .info p {
+            font-size: 14px;
+            color: #666;
+            margin: 10px 0;
+        }
+        .blog-item .info .author {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .blog-item .info .author img {
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        .blog-item .info .author span {
+            font-size: 14px;
+            color: #333;
+        }
+        .blog-item .info .stats {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .blog-item .info .stats span {
+            font-size: 14px;
+            color: #666;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="header">
+   <p><h1>Blogger</h1></p>
+    <div class="search-bar">
+    <input placeholder="What are you looking for?" type="text"/>
+    <i class="fas fa-search">
+    </i>
+   </div>
+   <div class="nav-links">
+    <a href="blog.html">
+        Home
+       </a>
+    <a href="Home">
+     Blog
+    </a>
+    
+    <a class="login" href="bloglogin.html">
+     Log in
+    </a>
+    
+   </div>
+  </div>
+  <div class="main-content">
+   <h1>
+    Blog Page
+   </h1>
+  </div>
+  <div class="blog-grid">
+   <div class="blog-item">
+    <img alt="Blog Image 1" height="200" src="https://storage.googleapis.com/a1aa/image/6oP3RX97f9SQIqNoPkmQaeIBPeHhAEdiKBxZ1H9xX5S9YhrnA.jpg" width="300"/>
+    <div class="info">
+     <h3>
+        <a href="blog1.html" style="text-decoration: none; color: #000;">Unavoidable</a>
+     </h3>
+     <p>
+        Blog
+     </p>
+     <div class="author">
+          <span>
+       Naveen Choudhary
+      </span>
+     </div>
+     <div class="stats">
+      <span>
+       <i class="fas fa-heart">
+       </i>
+       688
+      </span>
+      <span>
+       <i class="fas fa-eye">
+       </i>
+       215k
+      </span>
+     </div>
+    </div>
+   </div>
+   <div class="blog-item">
+    <img alt="Blog Image 2" height="200" src="https://storage.googleapis.com/a1aa/image/uawBaV4iRN46MBciE0Z1H6phnicILPFe66vp1uC0xoaOW46JA.jpg" width="300"/>
+    <div class="info">
+     <h3>
+        <a href="blog2.html" style="text-decoration: none; color: #000;"> Is AI Good or Bad?</a>
+     </h3>
+     <p>
+        Blog
+     </p>
+     <div class="author">
+           <span>
+       Amayra Patel
+      </span>
+     </div>
+     <div class="stats">
+      <span>
+       <i class="fas fa-heart">
+       </i>
+       894
+      </span>
+      <span>
+       <i class="fas fa-eye">
+       </i>
+       297k
+      </span>
+     </div>
+    </div>
+   </div>
+   <div class="blog-item">
+    <img alt="Blog Image 3" height="200" src="https://storage.googleapis.com/a1aa/image/CkSEEkyineVYQiQreq8P7MSvpYTv2MDaNeq8PCQzeBlKyCXPB.jpg" width="300"/>
+    <div class="info">
+     <h3>
+        <a href="blog3.html" style="text-decoration: none; color: #000;"> 7 Essential, Easy Ways to Help You Blog Through December</a>
+     </h3>
+     <p>
+      Blog
+     </p>
+     <div class="author">
+       <span>
+       Neeraj Nagwanshi
+      </span>
+     </div>
+     <div class="stats">
+      <span>
+       <i class="fas fa-heart">
+       </i>
+       526
+      </span>
+      <span>
+       <i class="fas fa-eye">
+       </i>
+       129k
+      </span>
+     </div>
+    </div>
+   </div>
+   <div class="blog-item">
+    <img alt="Blog Image 4" height="200" src="https://storage.googleapis.com/a1aa/image/z546decbMF3ePEs9Yi2hdJY0lCgV82SSfe7SODvLqo3uxCXPB.jpg" width="300"/>
+    <div class="info">
+     <h3>
+        <a href="blog4.html" style="text-decoration: none; color: #000;"> … I left my heart in Barcelona</a>
+     </h3>
+     <p>
+      Blog Stuff <br>
+     </p>
+     <div class="author">
+      <span>
+       Nakul Yadav
+      </span>
+     </div>
+     <div class="stats">
+      <span>
+       <i class="fas fa-heart">
+       </i>
+       383
+      </span>
+      <span>
+       <i class="fas fa-eye">
+       </i>
+       100k
+      </span>
+     </div>
+    </div>
+   </div>
+   <div class="blog-item">
+    <img alt="Blog Image 5" height="200" src="https://storage.googleapis.com/a1aa/image/emOhw6lAscWqayeQ9bJrL5oUAPfIjBKHJmgjeoOXhm7RyCXPB.jpg" width="300"/>
+    <div class="info">
+     <h3>
+        <a href="blog5.html" style="text-decoration: none; color: #000;"> Nothing Really…</a>
+     </h3>
+     <p>
+        Blog
+     </p>
+     <div class="author">
+      <span>
+       Nitin pawar
+      </span>
+     </div>
+     <div class="stats">
+      <span>
+       <i class="fas fa-heart">
+       </i>
+       123
+      </span>
+      <span>
+       <i class="fas fa-eye">
+       </i>
+       45k
+      </span>
+     </div>
+    </div>
+   </div>
+   <div class="blog-item">
+    <img alt="Blog Image 6" height="200" src="https://storage.googleapis.com/a1aa/image/Jr9IOJxJPhpVDRodtnbpjaA5uByzHRjt3yblXBCZJ60HLc9E.jpg" width="300"/>
+    <div class="info">
+     <h3>
+        <a href="blog6.html" style="text-decoration: none; color: #000;"> Five things</a>
+     </h3>
+     <p>
+        Blog
+     </p>
+     <div class="author">
+      <span>
+       Ramesh Yadav
+      </span>
+     </div>
+     <div class="stats">
+      <span>
+       <i class="fas fa-heart">
+       </i>
+       456
+      </span>
+      <span>
+       <i class="fas fa-eye">
+       </i>
+       78k
+      </span>
+     </div>
+    </div>
+   </div>
+   <div class="blog-item">
+    <img alt="Blog Image 7" height="200" src="https://storage.googleapis.com/a1aa/image/yugKcI67vFKcKtz2WHisWTxx1fH8hn9ym4ksU4rvB48QW46JA.jpg" width="300"/>
+    <div class="info">
+     <h3>
+        <a href="blog7.html" style="text-decoration: none; color: #000;"> the year of adventures</a>
+     </h3>
+     <p>
+        Blog
+     </p>
+     <div class="author">
+        <span>
+       Amit Pawar
+      </span>
+     </div>
+     <div class="stats">
+      <span>
+       <i class="fas fa-heart">
+       </i>
+       789
+      </span>
+      <span>
+       <i class="fas fa-eye">
+       </i>
+       123k
+      </span>
+     </div>
+    </div>
+   </div>
+   <div class="blog-item">
+    <img alt="Blog Image 8" height="200" src="https://storage.googleapis.com/a1aa/image/FUaNtE5mTPZXKFQkLMWpJmJVWzlMGCq3W9dzPyks4UnKLc9E.jpg" width="300"/>
+    <div class="info">
+     <h3>
+        <a href="blog8.html" style="text-decoration: none; color: #000;">Zoological Park (Zoo)</a>
+     </h3>
+     <p>
+      Blog
+     </p>
+     <div class="author">
+      <span>
+       Aman Chouhan
+      </span>
+     </div>
+     <div class="stats">
+      <span>
+       <i class="fas fa-heart">
+       </i>
+       321
+      </span>
+      <span>
+       <i class="fas fa-eye">
+       </i>
+       65k
+      </span>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="container">
+    <button class="button" onclick="window.location.href='bloglogin.html';">
+        Sign in to continue
+    </button>
+    
+   
+   <div class="footer">
+    <p>
+     © 2024 Blogger
+    </p>
+    <a href="blogterm.html">
+     Terms
+    </a>
+    <a href="blogprivacy.html">
+     Privacy
+    </a>
+    <div class="social-icons">
+     <a href="#">
+      <i class="fab fa-twitter">
+      </i>
+     </a>
+     <a href="#">
+      <i class="fab fa-facebook-f">
+      </i>
+     </a>
+     <a href="#">
+      <i class="fab fa-instagram">
+      </i>
+     </a>
+     <a href="#">
+      <i class="fab fa-pinterest">
+      </i>
+     </a>
+    </div>
+    
+   </div>
+   <style>
+    body {
+             font-family: Arial, sans-serif;
+             margin: 0;
+             padding: 0;
+             background-color: #fff;
+         }
+         .container {
+             text-align: center;
+             padding: 20px;
+         }
+         .button {
+             background-color: #000;
+             color: #fff;
+             padding: 10px 20px;
+             border: none;
+             border-radius: 20px;
+             font-size: 16px;
+             cursor: pointer;
+             margin: 20px 0;
+         }
+         .categories {
+             display: flex;
+             justify-content: center;
+             gap: 20px;
+             padding: 20px 0;
+         }
+         .category {
+             text-align: center;
+         }
+         .category img {
+             width: 200px;
+             height: 150px;
+             border-radius: 10px;
+         }
+         .category p {
+             margin-top: 10px;
+             font-size: 16px;
+             color: #333;
+         }
+         .footer {
+             text-align: center;
+             padding: 20px;
+             background-color: #f9f9f9;
+             border-top: 1px solid #eaeaea;
+         }
+         .footer a {
+             color: #333;
+             margin: 0 10px;
+             text-decoration: none;
+             font-size: 14px;
+         }
+         .footer p {
+             margin: 10px 0;
+             font-size: 14px;
+             color: #999;
+         }
+         .social-icons {
+             margin-top: 10px;
+         }
+         .social-icons a {
+             color: #333;
+             margin: 0 5px;
+             font-size: 20px;
+         }
+   </style>
+ </body>
+</html>
